@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cute Personal Profile</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="card">
+    <h1>🙋‍♀️ My Profile</h1>
+    <form action="ProfileServlet" method="post">
+      <label>Full name
+        <input type="text" name="name" required />
+      </label>
+
+      <label>Student ID
+        <input type="text" name="studentId" required />
+      </label>
+
+      <label>Program
+        <input type="text" name="program" required />
+      </label>
+
+      <label>Email
+        <input type="email" name="email" required />
+      </label>
+
+      <label>Hobbies (choose any)
+        <div class="hobbies">
+          <label><input type="checkbox" name="hobbies" value="Reading" /> Reading</label>
+          <label><input type="checkbox" name="hobbies" value="Baking" /> Baking</label>
+          <label><input type="checkbox" name="hobbies" value="TikTok" /> TikTok</label>
+          <label><input type="checkbox" name="hobbies" value="Shopping" /> Shopping</label>
+        </div>
+      </label>
+
+      <label>Short self-introduction
+        <textarea name="intro" rows="4" required></textarea>
+      </label>
+
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
