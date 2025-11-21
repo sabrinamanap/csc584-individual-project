@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Info</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Personal Information</h1>
+
+    <!-- Step 1: send to servlet -->
+    <form action="ProfileServlet" method="POST">
+
+        <input type="hidden" name="step" value="1">
+
+        <input type="text" name="fullname" placeholder="Full Name" required>
+        <input type="number" name="age" placeholder="Age" required>
+        <input type="date" name="birthdate" required>
+
+        <input type="text" name="hobby" placeholder="Hobby" required>
+
+        <textarea name="hobbyDesc" placeholder="Short hobby description" required></textarea>
+
+        <textarea name="selfIntro" placeholder="Short self introduction" required></textarea>
+
+        <button type="submit">Let's go to Academic Page!</button>
+    </form>
+</div>
+</body>
+</html>
